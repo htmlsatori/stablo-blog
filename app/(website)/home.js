@@ -7,7 +7,7 @@ export default function Post({ posts }) {
     <>
       {posts && (
         <Container>
-          <div className="grid gap-10 md:grid-cols-1  ">
+          <div className="mt-10 grid  md:grid-cols-1  ">
             {posts.slice(0, 2).map(post => (
               <PostList
                 key={post._id}
@@ -18,7 +18,7 @@ export default function Post({ posts }) {
               />
             ))}
           </div>
-          <div className="grid gap-10 md:grid-cols-1  ">
+          <div className="mt-10 grid  md:grid-cols-1  ">
             {posts.slice(2, 14).map(post => (
               <PostList
                 key={post._id}
