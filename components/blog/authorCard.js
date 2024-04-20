@@ -33,7 +33,7 @@ export default function AuthorCard({ author }) {
           <div className="mt-3">
             <Link
               href={`/author/${author.slug.current}`}
-              className="bg-brand-secondary/20 rounded-full py-2 text-sm text-blue-600 dark:text-blue-500 ">
+              className="bg-brand-secondary/20 rounded-full py-2 text-sm text-black dark:text-white hover:underline ">
               View Profile
             </Link>
           </div>
