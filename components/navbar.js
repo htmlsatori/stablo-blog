@@ -30,9 +30,7 @@ export default function Navbar(props) {
     {
       label: "",
       href: ""
-    },
-
- 
+    }
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -44,7 +42,7 @@ export default function Navbar(props) {
           {({ open }) => (
             <>
               <div className="flex flex-wrap justify-center ">
-                <div className="order-1 md:hidden hidden w-full flex-col items-center justify-start md:order-none  md:flex-1 md:flex-row md:justify-end">
+                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:hidden  md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -66,7 +64,7 @@ export default function Navbar(props) {
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex w-full items-center text-center justify-center md:w-full uppercase">
+                <div className="flex w-full items-center justify-center text-center uppercase md:w-full">
                   <Link href="/" className="w-28 dark:hidden">
                     {props.logo ? (
                       <Image
@@ -76,7 +74,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center text-4xl">
+                      <span className="block text-center text-4xl font-extrabold ">
                         inward{" "}
                       </span>
                     )}
@@ -90,7 +88,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
+                      <span className="block text-center text-4xl font-extrabold text-white">
                         inward{" "}
                       </span>
                     )}
