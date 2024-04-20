@@ -24,7 +24,6 @@ export default function Post({ posts }) {
                 key={post._id}
                 post={post}
                 aspect="landscape"
-                className="mt-10"
               />
             ))}
           </div>
