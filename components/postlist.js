@@ -44,7 +44,7 @@ export default function PostList({
                 fontWeight === "normal"
                   ? "line-clamp-2 font-medium  tracking-normal text-black"
                   : "font-semibold leading-snug tracking-tight",
-                "text-brand-primary    mb-3 mt-2 text-3xl font-semibold tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight text-center"
+                "text-brand-primary md:text-[3rem] text-left md:text-center   mb-3 mt-2 text-[1.5rem] font-semibold tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight "
               )}>
               <Link
                 href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
