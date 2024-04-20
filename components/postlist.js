@@ -44,7 +44,7 @@ export default function PostList({
                 fontWeight === "normal"
                   ? "line-clamp-2 font-medium  tracking-normal text-black"
                   : "font-semibold leading-snug tracking-tight",
-                "text-brand-primary    mb-3 mt-2 text-3xl font-semibold tracking-tight text-white dark:text-white lg:text-5xl lg:leading-tight text-center"
+                "text-brand-primary    mb-3 mt-2 text-3xl font-semibold tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight text-center"
               )}>
               <Link
                 href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
@@ -102,7 +102,7 @@ export default function PostList({
         </div>
         <div
           className={cx(
-            " my-10 overflow-hidden bg-gray-100 transition-all hover:scale-105   dark:bg-gray-800"
+            " my-10 overflow-hidden bg-gray-100 transition-all hover:scale-105 lg:rounded-lg   dark:bg-gray-800"
           )}>
           <Link
             className={cx(
