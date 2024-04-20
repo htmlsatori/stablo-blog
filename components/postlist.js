@@ -28,7 +28,7 @@ export default function PostList({
           "group cursor-pointer",
           minimal && "grid gap-10 md:grid-cols-2"
         )}>
-        <div className={cx(minimal && "flex items-center ")} >
+        <div className={cx(minimal && "flex items-center ")}>
           <div className="flex flex-col items-center justify-center">
             <CategoryLabel
               categories={post.categories}
@@ -44,7 +44,7 @@ export default function PostList({
                 fontWeight === "normal"
                   ? "line-clamp-2 font-medium  tracking-normal text-black"
                   : "font-semibold leading-snug tracking-tight",
-                "mt-2    dark:text-white"
+                "text-brand-primary    mb-3 mt-2 text-3xl font-semibold tracking-tight text-white dark:text-white lg:text-5xl lg:leading-tight text-center"
               )}>
               <Link
                 href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
@@ -102,7 +102,7 @@ export default function PostList({
         </div>
         <div
           className={cx(
-            " overflow-hidden my-10 bg-gray-100 transition-all hover:scale-105   dark:bg-gray-800"
+            " my-10 overflow-hidden bg-gray-100 transition-all hover:scale-105   dark:bg-gray-800"
           )}>
           <Link
             className={cx(
