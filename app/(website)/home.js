@@ -19,7 +19,7 @@ export default function Post({ posts }) {
             ))}
           </div>
           <div className="grid gap-10 md:grid-cols-1  ">
-            {posts.slice(0, 2).map(post => (
+            {posts.slice(2, 14).map(post => (
               <PostList
                 key={post._id}
                 post={post}
