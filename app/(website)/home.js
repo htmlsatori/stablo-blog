@@ -7,7 +7,7 @@ export default function Post({ posts }) {
     <>
       {posts && (
         <Container>
-          <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
+          <div className="grid gap-10 md:grid-cols-1 lg:gap-10 ">
             {posts.slice(0, 2).map(post => (
               <PostList
                 key={post._id}
@@ -22,7 +22,9 @@ export default function Post({ posts }) {
               <PostList key={post._id} post={post} aspect="square" />
             ))}
           </div>
-          <div className="mt-10 flex justify-center">
+          
+          
+          <div className="mt-10 justify-center hidden">
             <Link
               href="/archive"
               className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300">
