@@ -22,10 +22,7 @@ export default function Featured({ post, pathPrefix }) {
       }}>
       {imageProps && (
         <div className="relative aspect-video md:aspect-auto">
-          <Link
-            href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-              post.slug.current
-            }`}>
+        
             <Image
               src={imageProps.src}
               {...(post.mainImage.blurDataURL && {
@@ -38,7 +35,6 @@ export default function Featured({ post, pathPrefix }) {
               sizes="100vw"
               className="object-cover"
             />
-          </Link>
         </div>
       )}
 
