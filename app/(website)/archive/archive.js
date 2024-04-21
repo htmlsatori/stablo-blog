@@ -32,9 +32,9 @@ export default async function Post({ searchParams }) {
           </span>
         </div>
       )}
-      <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3">
+      <div className="mt-10 grid gap-10 items-end md:grid-cols-2 lg:gap-10 xl:grid-cols-2">
         {posts.map(post => (
-          <PostList key={post._id} post={post} aspect="square" />
+          <PostList key={post._id} post={post} aspect="square"  />
         ))}
       </div>
 
