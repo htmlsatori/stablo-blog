@@ -33,7 +33,7 @@ async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title || "INWARD",
       card: "summary_large_image"
     },
     robots: {
