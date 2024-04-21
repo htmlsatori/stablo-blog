@@ -30,7 +30,6 @@ export default function PostAlt({
             "relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800",
             aspect === "landscape" ? "aspect-video" : "aspect-square"
           )}>
-          <Link href={`/post/minimal/${post.slug.current}`}>
             {imageProps ? (
               <Image
                 src={imageProps.src}
@@ -49,7 +48,6 @@ export default function PostAlt({
                 <PhotoIcon />
               </span>
             )}
-          </Link>
         </div>
 
         <div

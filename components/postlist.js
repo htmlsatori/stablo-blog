@@ -68,7 +68,6 @@ export default function PostList({
             </div>
 
             <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
-              <Link href={`/author/${post?.author?.slug?.current}`}>
                 <div className="flex items-center gap-3">
                   <div className="relative h-5 w-5 flex-shrink-0">
                     {post?.author?.image && (
@@ -85,7 +84,6 @@ export default function PostList({
                     {post?.author?.name}
                   </span>
                 </div>
-              </Link>
               <span className="text-xs text-gray-300 dark:text-gray-600">
                 &bull;
               </span>
