@@ -10,15 +10,13 @@ export default function AuthorCard({ author }) {
       <div className="flex flex-wrap items-start sm:flex-nowrap sm:space-x-6">
         <div className="relative mt-1 h-24 w-24 flex-shrink-0 ">
           {imageProps && (
-         
-              <Image
-                src={imageProps.src}
-                alt={author.name}
-                className="rounded-full object-cover"
-                fill
-                sizes="96px"
-              />
-      
+            <Image
+              src={imageProps.src}
+              alt={author.name}
+              className="rounded-full object-cover"
+              fill
+              sizes="96px"
+            />
           )}
         </div>
         <div>
@@ -30,13 +28,7 @@ export default function AuthorCard({ author }) {
           <div>
             {author.bio && <PortableText value={author.bio} />}
           </div>
-          <div className="mt-3">
-            <Link
-     
-              className="bg-brand-secondary/20 rounded-full py-2 text-sm text-black dark:text-white hover:underline ">
-              
-            </Link>
-          </div>
+       
         </div>
       </div>
     </div>
