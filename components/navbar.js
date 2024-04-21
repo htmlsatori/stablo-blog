@@ -66,32 +66,18 @@ export default function Navbar(props) {
                 </div>
                 <div className="flex w-full items-center justify-center text-center uppercase md:w-full">
                   <Link href="/" className="w-28 dark:hidden">
-                    {props.logo ? (
-                      <Image
-                        {...urlForImage(props.logo)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center uppercase text-4xl font-extrabold ">
+               
+                      <span className="block text-center text-4xl font-extrabold ">
                         inward{" "}
                       </span>
-                    )}
+        
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
-                    {props.logoalt ? (
-                      <Image
-                        {...urlForImage(props.logoalt)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center uppercase text-4xl font-extrabold text-white">
+           
+                      <span className="block text-center text-4xl font-extrabold text-white">
                         inward{" "}
                       </span>
-                    )}
+                  
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
