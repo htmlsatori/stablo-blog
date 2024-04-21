@@ -20,7 +20,6 @@ export default function About({ authors, settings }) {
             <div
               key={author._id}
               className="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-              <Link  href={`/author/${author?.slug}`}>
                 {imageProps && (
                   <Image
                     src={imageProps?.src}
@@ -30,7 +29,6 @@ export default function About({ authors, settings }) {
                     className="object-cover"
                   />
                 )}
-              </Link>
             </div>
           );
         })}
