@@ -74,7 +74,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center text-4xl font-extrabold ">
+                      <span className="block text-center uppercase text-4xl font-extrabold ">
                         inward{" "}
                       </span>
                     )}
@@ -88,7 +88,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center text-4xl font-extrabold text-white">
+                      <span className="block text-center uppercase text-4xl font-extrabold text-white">
                         inward{" "}
                       </span>
                     )}
