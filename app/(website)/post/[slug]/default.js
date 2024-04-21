@@ -52,7 +52,11 @@ export default function Post(props) {
                 )}
               </div>
               <div>
-                
+                <p className="text-gray-800 dark:text-gray-400">
+                  <Link>
+                    {post.author.name}
+                  </Link>
+                </p>
                 <div className="flex items-center space-x-2 text-sm">
                   <time
                     className="text-gray-500 dark:text-gray-400"
