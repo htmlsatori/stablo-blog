@@ -42,7 +42,7 @@ export default function Post(props) {
             <div className="flex items-center gap-3">
               <div className="relative h-10 w-10 flex-shrink-0">
                 {AuthorimageProps && (
-                  <Link href={`/author/${post.author.slug.current}`}>
+                  <Link /* href={`/author/${post.author.slug.current}`}*/>
                     <Image
                       src={AuthorimageProps.src}
                       alt={post?.author?.name}
